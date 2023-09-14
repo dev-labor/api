@@ -1,0 +1,9 @@
+CREATE TABLE `employees` (
+  `id` int(11) NOT NULL COMMENT 'Primary Key',
+  `employee_id` varchar(255) DEFAULT NULL,
+  `employee_name` varchar(255) DEFAULT NULL,
+  `employee_salary` decimal(10,2) DEFAULT NULL,
+  `employee_start_date` date DEFAULT NULL,
+  `employee_position` varchar(255) DEFAULT NULL,
+  `employee_work_status` enum('ทำงาน','ลาออก') DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
